@@ -90,12 +90,10 @@ public class CarControllerTest {
      */
     @Test
     public void listCars() throws Exception {
-        /**
-         * TODO: Add a test to check that the `get` method works by calling
-         *   the whole list of vehicles. This should utilize the car from `getCar()`
-         *   below (the vehicle will be the first in the list).
-         */
+        mvc.perform(get("/cars/"))
+                .andExpect(status().isOk());
 
+        verify(carService, times(1)).list();
     }
 
     /**
@@ -105,11 +103,10 @@ public class CarControllerTest {
      */
     @Test
     public void findCar() throws Exception {
-        Car car = carService.save(getCar());
-        mvc.perform(get("/cars/" + car.getId()))
+        mvc.perform(get("/cars/" + 1))
                 .andExpect(status().isOk());
 
-        verify(carService, times(1)).findById(car.getId());
+        verify(carService, times(1)).findById(1L);
     }
 
     /**
@@ -119,10 +116,9 @@ public class CarControllerTest {
      */
     @Test
     public void deleteCar() throws Exception {
-        Car car = carService.save(getCar());
-        mvc.perform(delete("/cars/" + car.getId()));
+        mvc.perform(delete("/cars/" + 1));
 
-        verify(carService, times(1)).delete(car.getId());
+        verify(carService, times(1)).delete(1L);
     }
 
     /**
