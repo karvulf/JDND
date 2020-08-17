@@ -7,12 +7,12 @@ import java.util.stream.Collectors;
 public class Helper {
 	
 	/**
-	    * Method to get the count of empty strings
+	    * Method to get the count of not empty strings
 	    * @param strings
 	    * @return
 	    */
 		public static long getCount(List<String> strings){
-			return strings.stream().filter(string->string.isEmpty()).count();
+			return strings.stream().filter(string->!string.isEmpty()).count();
 		}
 		
 		/**
