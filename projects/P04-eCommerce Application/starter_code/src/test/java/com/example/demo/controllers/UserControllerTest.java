@@ -35,14 +35,12 @@ public class UserControllerTest {
 
     @Test
     public void create_user_create_path() throws Exception {
-        when(encoder.encode("testPassword ")).thenReturn("thisIsHashed");
+        String username = "test";
+        String password = "testPassword";
+        String hash = "thisIsHashed";
+        when(encoder.encode(password)).thenReturn(hash);
 
-        CreateUserRequest r = new CreateUserRequest();
-        r.setUsername("test");
-        r.setPassword("testPassword");
-        r.setConfirmPassword("testPassword");
-
-        ResponseEntity<User> response = userController.createUser(r);
+        ResponseEntity<User> response = createUser(username, password);
 
         assertNotNull(response);
         assertEquals(200, response.getStatusCodeValue());
@@ -50,7 +48,57 @@ public class UserControllerTest {
         User u = response.getBody();
         assertNotNull(u);
         assertEquals(0, u.getId());
-        assertEquals("test", u.getUsername());
-        // assertEquals("thisIsHashed", u.getPassword());
+        assertEquals(username, u.getUsername());
+        assertEquals(hash, u.getPassword());
     }
+
+    @Test
+    public void testFindByUserName() {
+        String username = "test";
+        String password = "testPassword";
+
+        User user = getUser(username, password);
+
+        when(userRepository.findByUsername(username)).thenReturn(user);
+        ResponseEntity<User> response = userController.findByUserName(username);
+
+        assertTrue(response.getStatusCode().is2xxSuccessful());
+        assertEquals(username, response.getBody().getUsername());
+        assertEquals(password, response.getBody().getPassword());
+    }
+
+    @Test
+    public void testFindById() {
+        String username = "test";
+        String password = "testPassword";
+        Long id = 0L;
+
+        User user = getUser(username, password);
+
+        when(userRepository.findById(0L)).thenReturn(java.util.Optional.of(user));
+        ResponseEntity<User> response = userController.findById(id);
+
+        assertTrue(response.getStatusCode().is2xxSuccessful());
+        assertEquals(username, response.getBody().getUsername());
+        assertEquals(password, response.getBody().getPassword());
+
+    }
+
+    private ResponseEntity<User> createUser(String username, String password) {
+        CreateUserRequest r = new CreateUserRequest();
+        r.setUsername(username);
+        r.setPassword(password);
+        r.setConfirmPassword(password);
+
+        return userController.createUser(r);
+    }
+
+    private User getUser(String username, String password) {
+        User user = new User();
+        user.setUsername(username);
+        user.setPassword(password);
+
+        return user;
+    }
+
 }
