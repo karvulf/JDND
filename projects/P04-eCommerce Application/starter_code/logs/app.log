@@ -26,3 +26,9 @@
 2020-08-18 18:03:36,553 INFO c.e.d.SareetaApplication [http-nio-8080-exec-10] User successfully create with username Aaffdsasased3
 2020-08-18 18:03:39,029 INFO c.e.d.SareetaApplication [http-nio-8080-exec-2] User name set with Aaffdased3
 2020-08-18 18:03:39,118 INFO c.e.d.SareetaApplication [http-nio-8080-exec-2] User successfully create with username Aaffdased3
+2020-08-18 18:30:51,760 INFO c.e.d.SareetaApplicationTests [main] Starting SareetaApplicationTests on Andres-MacBook-Pro-2.local with PID 25446 (started by andre in /Users/andre/git/JDND/projects/P04-eCommerce Application/starter_code)
+2020-08-18 18:30:51,770 DEBUG c.e.d.SareetaApplicationTests [main] Running with Spring Boot v2.1.5.RELEASE, Spring v5.1.7.RELEASE
+2020-08-18 18:30:51,771 INFO c.e.d.SareetaApplicationTests [main] No active profile set, falling back to default profiles: default
+2020-08-18 18:30:57,713 INFO c.e.d.SareetaApplicationTests [main] Started SareetaApplicationTests in 6.252 seconds (JVM running for 13.314)
+2020-08-18 18:30:58,214 INFO c.e.d.SareetaApplication [main] Order successfully submitted by user test
+2020-08-18 18:30:58,241 INFO c.e.d.SareetaApplication [main] User successfully create with username test
