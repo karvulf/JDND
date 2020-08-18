@@ -1,0 +1,28 @@
+2020-08-18 18:01:51,009 INFO c.e.d.SareetaApplication [main] Starting SareetaApplication on Andres-MacBook-Pro-2.local with PID 23669 (started by andre in /Users/andre/git/JDND/projects/P04-eCommerce Application/starter_code)
+2020-08-18 18:01:51,015 DEBUG c.e.d.SareetaApplication [main] Running with Spring Boot v2.1.5.RELEASE, Spring v5.1.7.RELEASE
+2020-08-18 18:01:51,015 INFO c.e.d.SareetaApplication [main] No active profile set, falling back to default profiles: default
+2020-08-18 18:01:53,163 DEBUG c.e.d.s.JWTAuthenticationVerificationFilter [main] Filter 'JWTAuthenticationVerificationFilter' configured for use
+2020-08-18 18:01:53,590 INFO c.e.d.SareetaApplication [main] Started SareetaApplication in 2.766 seconds (JVM running for 8.56)
+2020-08-18 18:02:43,047 INFO c.e.d.SareetaApplication [main] Starting SareetaApplication on Andres-MacBook-Pro-2.local with PID 23721 (started by andre in /Users/andre/git/JDND/projects/P04-eCommerce Application/starter_code)
+2020-08-18 18:02:43,055 DEBUG c.e.d.SareetaApplication [main] Running with Spring Boot v2.1.5.RELEASE, Spring v5.1.7.RELEASE
+2020-08-18 18:02:43,056 INFO c.e.d.SareetaApplication [main] No active profile set, falling back to default profiles: default
+2020-08-18 18:02:45,259 DEBUG c.e.d.s.JWTAuthenticationVerificationFilter [main] Filter 'JWTAuthenticationVerificationFilter' configured for use
+2020-08-18 18:02:45,725 INFO c.e.d.SareetaApplication [main] Started SareetaApplication in 2.899 seconds (JVM running for 8.759)
+2020-08-18 18:02:55,379 INFO c.e.d.SareetaApplication [http-nio-8080-exec-1] User name set with Anafsdffdsasdadred3
+2020-08-18 18:02:55,417 ERROR c.e.d.SareetaApplication [http-nio-8080-exec-1] Error with user password. Cannot create user Anafsdffdsasdadred3
+2020-08-18 18:03:00,910 INFO c.e.d.SareetaApplication [http-nio-8080-exec-4] User name set with Anafsdffdsasdadred3
+2020-08-18 18:03:01,006 INFO c.e.d.SareetaApplication [http-nio-8080-exec-4] User successfully create with username Anafsdffdsasdadred3
+2020-08-18 18:03:23,359 INFO c.e.d.SareetaApplication [http-nio-8080-exec-5] User name set with Anafsdfdsasdadred3
+2020-08-18 18:03:23,447 INFO c.e.d.SareetaApplication [http-nio-8080-exec-5] User successfully create with username Anafsdfdsasdadred3
+2020-08-18 18:03:25,551 INFO c.e.d.SareetaApplication [http-nio-8080-exec-6] User name set with Anafsdfdsasddred3
+2020-08-18 18:03:25,636 INFO c.e.d.SareetaApplication [http-nio-8080-exec-6] User successfully create with username Anafsdfdsasddred3
+2020-08-18 18:03:28,851 INFO c.e.d.SareetaApplication [http-nio-8080-exec-7] User name set with Anafsasddred3
+2020-08-18 18:03:28,935 INFO c.e.d.SareetaApplication [http-nio-8080-exec-7] User successfully create with username Anafsasddred3
+2020-08-18 18:03:31,986 INFO c.e.d.SareetaApplication [http-nio-8080-exec-8] User name set with Anafsased3
+2020-08-18 18:03:32,083 INFO c.e.d.SareetaApplication [http-nio-8080-exec-8] User successfully create with username Anafsased3
+2020-08-18 18:03:34,482 INFO c.e.d.SareetaApplication [http-nio-8080-exec-9] User name set with Aafsased3
+2020-08-18 18:03:34,567 INFO c.e.d.SareetaApplication [http-nio-8080-exec-9] User successfully create with username Aafsased3
+2020-08-18 18:03:36,471 INFO c.e.d.SareetaApplication [http-nio-8080-exec-10] User name set with Aaffdsasased3
+2020-08-18 18:03:36,553 INFO c.e.d.SareetaApplication [http-nio-8080-exec-10] User successfully create with username Aaffdsasased3
+2020-08-18 18:03:39,029 INFO c.e.d.SareetaApplication [http-nio-8080-exec-2] User name set with Aaffdased3
+2020-08-18 18:03:39,118 INFO c.e.d.SareetaApplication [http-nio-8080-exec-2] User successfully create with username Aaffdased3

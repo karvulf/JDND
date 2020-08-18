@@ -1,3 +1,6 @@
 /Users/andre/git/JDND/projects/P04-eCommerce Application/starter_code/src/test/java/com/example/demo/SareetaApplicationTests.java
 /Users/andre/git/JDND/projects/P04-eCommerce Application/starter_code/src/test/java/com/example/demo/TestUtils.java
+/Users/andre/git/JDND/projects/P04-eCommerce Application/starter_code/src/test/java/com/example/demo/controllers/ItemControllerTest.java
+/Users/andre/git/JDND/projects/P04-eCommerce Application/starter_code/src/test/java/com/example/demo/controllers/OrderControllerTest.java
+/Users/andre/git/JDND/projects/P04-eCommerce Application/starter_code/src/test/java/com/example/demo/controllers/CartControllerTest.java
 /Users/andre/git/JDND/projects/P04-eCommerce Application/starter_code/src/test/java/com/example/demo/controllers/UserControllerTest.java
