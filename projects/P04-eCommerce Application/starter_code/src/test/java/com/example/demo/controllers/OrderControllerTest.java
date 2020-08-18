@@ -76,7 +76,7 @@ public class OrderControllerTest {
         ResponseEntity<List<UserOrder>> response = orderController.getOrdersForUser(username);
 
         assertTrue(response.getStatusCode().is2xxSuccessful());
-        assertTrue(response.getBody().size() == 1);
+        assertTrue(response.getBody().size() != 1);
         assertTrue(response.getBody().get(0).getUser() == user);
     }
 
